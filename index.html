@@ -3,70 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Apresentação | Projeto ADS</title>
+    <title>Nágila Labella | Psicologia Clínica e Terapia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="hero">
         <div class="container">
-            <h1>Olá! Eu sou [Seu Nome]</h1>
-            <p>Especialista em Análise e Desenvolvimento de Sistemas e Prototipação Rápida.</p>
-            <a href="#servicos" class="btn-primary">Conheça Meus Serviços</a>
+            <hgroup>
+                <h1>Nágila Labella</h1>
+                <p class="subtitle">Psicóloga Clínica | CRP: 00/00000</p>
+            </hgroup>
+            <p>Seja bem-vindo(a). Meu trabalho é guiar você em sua jornada de autoconhecimento e bem-estar emocional.</p>
+            <a href="#agendamento" class="btn-primary">Agende Sua Primeira Sessão</a>
         </div>
     </header>
 
-    <section id="historia" class="section-padded">
+    <section id="historia" class="section-padded bg-light">
         <div class="container">
-            <h2>Minha Jornada em ADS</h2>
-            <p>Minha história com a tecnologia começou [Ano]. Desde então, meu foco tem sido em [Área de Foco]. Este projeto de extensão reflete meu compromisso em traduzir problemas complexos em soluções digitais eficientes, como a que estou propondo para [Nome da Organização].</p>
-            <p>O aprendizado em ADS me equipou com as habilidades de modelagem, análise e desenvolvimento de software necessárias para [Meta do Projeto].</p>
+            <h2>Minha História e Missão</h2>
+            <div class="content-split">
+                <div class="text-content">
+                    <h3>Uma Jornada de Escuta e Cuidado</h3>
+                    <p>Formada pela [Nome da Universidade] em [Ano], minha trajetória na Psicologia Clínica é marcada pela profunda crença no poder da escuta ativa e da transformação pessoal. Sou especializada em [Área de Especialização, ex: Terapia Cognitivo-Comportamental (TCC)] e busco criar um espaço seguro, acolhedor e sem julgamentos para todos os meus pacientes.</p>
+                    <p>Acredito que cada indivíduo possui recursos internos poderosos para enfrentar desafios. Minha missão é ajudar você a identificá-los e utilizá-los para construir uma vida mais equilibrada e significativa.</p>
+                </div>
+                <div class="image-placeholder">
+                    
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="servicos" class="section-padded bg-light">
+    <section id="servicos" class="section-padded">
         <div class="container">
-            <h2>Serviços e Soluções Propostas</h2>
+            <h2>Modalidades de Atendimento</h2>
             <div class="servicos-grid">
                 <div class="card">
-                    <h3>Análise e Levantamento</h3>
-                    <p>Mapeamento de processos, coleta de requisitos e diagramas UML para modelagem de sistemas.</p>
+                    <span class="icon">💻</span>
+                    <h3>Terapia Online</h3>
+                    <p>Atendimento psicológico completo via videochamada, proporcionando conforto e flexibilidade, onde quer que você esteja.</p>
                 </div>
                 <div class="card">
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Criação de websites e plataformas com foco em tecnologias modernas e arquitetura Serverless (em Nuvem).</p>
+                    <span class="icon">🛋️</span>
+                    <h3>Atendimento Presencial</h3>
+                    <p>Sessões em meu consultório em [Nome da Cidade/Bairro], para quem prefere a interação direta e o ambiente clínico tradicional.</p>
                 </div>
                 <div class="card">
-                    <h3>Consultoria Tecnológica</h3>
-                    <p>Otimização de infraestrutura e proposta de soluções de segurança da informação.</p>
+                    <span class="icon">👨‍👩‍👧‍👦</span>
+                    <h3>Terapia de Casal e Família</h3>
+                    <p>Foco em melhorar a comunicação, resolver conflitos e fortalecer os laços entre os membros da família ou do casal.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="section-padded">
+    <section id="avaliacoes" class="section-padded bg-light">
         <div class="container">
-            <h2>Contato e Agendamento</h2>
-            <p>Gostaria de agendar uma consulta para discutir as necessidades de sua organização? Use o formulário ou o link abaixo:</p>
-            
-            <form id="contact-form">
-                <input type="text" name="nome" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu Email" required>
-                <textarea name="mensagem" placeholder="Sua Mensagem ou Pergunta" rows="4" required></textarea>
-                <button type="submit" class="btn-primary">Enviar Mensagem</button>
-                <p id="form-message" style="margin-top: 15px;"></p>
-            </form>
-
-            <h3 style="margin-top: 30px;">Ou Agende Diretamente</h3>
-            <div id="agendamento-widget" style="min-height: 400px; background-color: #f7f7f7; padding: 20px; border-radius: 8px; text-align: center; border: 1px dashed #ccc;">
-                <p>Insira aqui o código de incorporação (embed) do seu agendador online (ex: Calendly) para que os clientes possam marcar consultas diretamente.</p>
+            <h2>O Que Dizem Meus Pacientes</h2>
+            <div class="avaliacoes-grid">
+                <blockquote class="avaliacao">
+                    <p>"A Nágila me ajudou a enxergar meus problemas sob uma nova perspectiva. Sinto-me muito mais forte e segura. Recomendo a todos!"</p>
+                    <footer>— Paciente Anônimo M.A.</footer>
+                </blockquote>
+                <blockquote class="avaliacao">
+                    <p>"Profissional extremamente atenciosa e competente. As sessões online são tão eficazes quanto as presenciais."</p>
+                    <footer>— Paciente Anônimo R.C.</footer>
+                </blockquote>
+                <blockquote class="avaliacao">
+                    <p>"Em apenas alguns meses, a terapia transformou a dinâmica do meu relacionamento. Gratidão!"</p>
+                    <footer>— Casal Anônimo P.V.</footer>
+                </blockquote>
             </div>
+        </div>
+    </section>
+
+    <section id="agendamento" class="cta-section">
+        <div class="container text-center">
+            <h2>Pronto para Começar a Transformação?</h2>
+            <p>Agende sua primeira conversa e comece a cuidar de você hoje mesmo.</p>
+            
+            <a href="[LINK DO CALENDLY OU CONTATO]" target="_blank" class="btn-primary btn-large">Agendar Agora</a>
+
+            <p class="contact-info">Ou entre em contato via WhatsApp: (99) 99999-9999</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Projeto de Extensão ADS | Desenvolvido com HTML, CSS e Hospedagem Serverless.</p>
+            <p>&copy; 2025 Nágila Labella Psicologia. Desenvolvido para Projeto de Extensão ADS.</p>
         </div>
     </footer>
 
