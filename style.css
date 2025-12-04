@@ -6,104 +6,178 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #444;
     background-color: #fff;
 }
 
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 /* BOTÕES E ESTILOS GERAIS */
 .btn-primary {
     display: inline-block;
-    background: #007bff;
+    background: #0077b6; /* Azul que transmite confiança */
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-    border: none;
-    cursor: pointer;
+    border-radius: 30px; /* Bordas arredondadas */
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary:hover {
-    background: #0056b3;
+    background: #005f99;
+    transform: translateY(-2px);
+}
+
+.btn-large {
+    font-size: 1.1em;
+    padding: 15px 30px;
 }
 
 /* CABEÇALHO (HERO) */
 .hero {
-    background: #343a40;
+    background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%); /* Gradiente suave */
     color: white;
-    padding: 100px 0;
+    padding: 120px 0;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
+    font-size: 3.5em;
+    margin-bottom: 5px;
 }
 
-.hero p {
-    font-size: 1.2em;
+.subtitle {
+    font-size: 1.3em;
+    font-style: italic;
+    opacity: 0.9;
     margin-bottom: 25px;
 }
 
 /* SEÇÕES */
 .section-padded {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .bg-light {
-    background-color: #f8f9fa;
+    background-color: #f7f9fc; /* Fundo suave */
 }
 
 .section-padded h2 {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2em;
+    margin-bottom: 50px;
+    font-size: 2.2em;
+    color: #0077b6;
+}
+
+/* SEÇÃO HISTÓRIA */
+.content-split {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 2;
+}
+
+.image-placeholder {
+    flex: 1;
+    min-height: 250px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Estilo para simular a tag de imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
 }
 
 /* GRID DE SERVIÇOS */
 .servicos-grid {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .card {
     background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px; /* Garante 3 itens por linha em telas grandes */
-    min-width: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    flex: 1 1 280px; 
+    text-align: center;
 }
 
 .card h3 {
-    color: #007bff;
+    color: #0077b6;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
-/* FORMULÁRIO DE CONTATO */
-#contact-form {
-    display: grid;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
+.icon {
+    font-size: 2em;
+    display: block;
 }
 
-#contact-form input, 
-#contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* AVALIAÇÕES/TESTEMUNHOS */
+.avaliacoes-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.avaliacao {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #0077b6;
+    flex: 1 1 300px;
+    font-style: italic;
+}
+
+.avaliacao footer {
+    margin-top: 15px;
+    display: block;
+    text-align: right;
+    font-style: normal;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* CTA E AGENDAMENTO */
+.cta-section {
+    background-color: #0077b6;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    opacity: 0.8;
 }
 
 /* RODAPÉ */
@@ -115,15 +189,16 @@ footer {
     font-size: 0.9em;
 }
 
-/* RESPONSIVIDADE BÁSICA */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    .hero {
-        padding: 60px 0;
-    }
     .hero h1 {
-        font-size: 2em;
+        font-size: 2.5em;
     }
-    .servicos-grid {
+    .content-split {
         flex-direction: column;
+    }
+    .servicos-grid, .avaliacoes-grid {
+        flex-direction: column;
+        gap: 20px;
     }
 }
