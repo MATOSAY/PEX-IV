@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Apresentação | Projeto ADS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Olá! Eu sou [Seu Nome]</h1>
+            <p>Especialista em Análise e Desenvolvimento de Sistemas e Prototipação Rápida.</p>
+            <a href="#servicos" class="btn-primary">Conheça Meus Serviços</a>
+        </div>
+    </header>
+
+    <section id="historia" class="section-padded">
+        <div class="container">
+            <h2>Minha Jornada em ADS</h2>
+            <p>Minha história com a tecnologia começou [Ano]. Desde então, meu foco tem sido em [Área de Foco]. Este projeto de extensão reflete meu compromisso em traduzir problemas complexos em soluções digitais eficientes, como a que estou propondo para [Nome da Organização].</p>
+            <p>O aprendizado em ADS me equipou com as habilidades de modelagem, análise e desenvolvimento de software necessárias para [Meta do Projeto].</p>
+        </div>
+    </section>
+
+    <section id="servicos" class="section-padded bg-light">
+        <div class="container">
+            <h2>Serviços e Soluções Propostas</h2>
+            <div class="servicos-grid">
+                <div class="card">
+                    <h3>Análise e Levantamento</h3>
+                    <p>Mapeamento de processos, coleta de requisitos e diagramas UML para modelagem de sistemas.</p>
+                </div>
+                <div class="card">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de websites e plataformas com foco em tecnologias modernas e arquitetura Serverless (em Nuvem).</p>
+                </div>
+                <div class="card">
+                    <h3>Consultoria Tecnológica</h3>
+                    <p>Otimização de infraestrutura e proposta de soluções de segurança da informação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padded">
+        <div class="container">
+            <h2>Contato e Agendamento</h2>
+            <p>Gostaria de agendar uma consulta para discutir as necessidades de sua organização? Use o formulário ou o link abaixo:</p>
+            
+            <form id="contact-form">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem ou Pergunta" rows="4" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                <p id="form-message" style="margin-top: 15px;"></p>
+            </form>
+
+            <h3 style="margin-top: 30px;">Ou Agende Diretamente</h3>
+            <div id="agendamento-widget" style="min-height: 400px; background-color: #f7f7f7; padding: 20px; border-radius: 8px; text-align: center; border: 1px dashed #ccc;">
+                <p>Insira aqui o código de incorporação (embed) do seu agendador online (ex: Calendly) para que os clientes possam marcar consultas diretamente.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Projeto de Extensão ADS | Desenvolvido com HTML, CSS e Hospedagem Serverless.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
